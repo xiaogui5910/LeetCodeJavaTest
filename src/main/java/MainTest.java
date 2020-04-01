@@ -22,6 +22,10 @@ public class MainTest {
 
         new QuickSort().test();
 
+        new HeapSort().test();
+
+        new CountSort().test();
+
 //        reviewSort();
     }
 
