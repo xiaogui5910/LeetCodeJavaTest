@@ -26,6 +26,8 @@ public class MainTest {
 
         new CountSort().test();
 
+        new BucketSort().test();
+
 //        reviewSort();
     }
 
