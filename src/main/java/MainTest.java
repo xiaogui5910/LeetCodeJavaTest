@@ -2,6 +2,10 @@ import leetcode.SingleNumberExtension;
 import leetcode.SingleNumber_136;
 import sort.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
 public class MainTest {
     public static void main(String[] args) {
         System.out.println("hello world!");
@@ -30,7 +34,7 @@ public class MainTest {
 
         new RadixSort().test();
 
-//        reviewSort();
+        reviewSort();
     }
 
     private static void reviewSort() {
@@ -40,8 +44,164 @@ public class MainTest {
 //        selection(arr);
 //        insert(arr);
 //        shell(arr);
-        merge(arr);
+//        merge(arr);
+//        quick(arr);
+//        heap(arr);
+//        count(arr);
+        bucket(arr);
         SortUtils.printArr("maintest", arr);
+    }
+
+    private static void bucket(int[] arr) {
+        int max = arr[0];
+        int min = arr[0];
+        for (int value :
+                arr) {
+            if (max < value) {
+                max = value;
+            }
+            if (min > value) {
+                min = value;
+            }
+        }
+
+        //计算桶数量
+        int bucketNum = (max-min)/arr.length+1;
+        //创建桶集合
+        ArrayList<ArrayList<Integer>> bucketList= new ArrayList<ArrayList<Integer>>();
+        for (int i = 0; i < bucketNum; i++) {
+            bucketList.add(new ArrayList<Integer>());
+        }
+
+        //将数组元素放入桶中
+        for (int i = 0; i < arr.length; i++) {
+            int index= (arr[i]-min)/arr.length;
+            bucketList.get(index).add(arr[i]);
+        }
+
+        //取出桶内数据，并排序，放回原数组
+        int index=0;
+        for (int i = 0; i < bucketList.size(); i++) {
+            ArrayList<Integer> dataList = bucketList.get(i);
+            if (dataList.isEmpty()){
+                continue;
+            }
+            Collections.sort(dataList);
+            for (int j = 0; j < dataList.size(); j++) {
+                arr[index++]=dataList.get(j);
+            }
+        }
+
+    }
+
+    private static void count(int[] arr) {
+        int max = arr[0];
+        int min = arr[0];
+        for (int value :
+                arr) {
+            if (max < value) {
+                max = value;
+            }
+            if (min > value) {
+                min = value;
+            }
+        }
+
+        int len = max - min+1;
+        int[] countArr = new int[len];
+
+        for (int value : arr) {
+            countArr[value - min]++;
+        }
+
+        int index = 0;
+        for (int i = 0; i < countArr.length; i++) {
+            while (countArr[i]-- > 0) {
+                arr[index++] = i + min;
+            }
+        }
+    }
+
+    private static void heap(int[] arr) {
+        //创建大顶堆
+        for (int i = (arr.length - 1) / 2; i >= 0; i--) {
+            adjustHeap(arr, i, arr.length);
+        }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            //交换第一个和最后一个元素
+            SortUtils.swap(arr, 0, i);
+            //排除最后一个元素后继续调整成大顶堆,此时只有第一个父结点没有调整，所以parent=0，调整长度len=i
+            adjustHeap(arr, 0, i);
+        }
+    }
+
+    private static void adjustHeap(int[] arr, int parent, int length) {
+        //记录父节点值
+        int temp = arr[parent];
+        int leftChild = 2 * parent + 1;
+
+        while (leftChild < length) {
+            int rightChild = leftChild + 1;
+            //存在右结点，右结点大于左结点，取两者最大值去和父结点比较
+            if (rightChild < length && arr[rightChild] > arr[leftChild]) {
+                leftChild++;
+            }
+
+            //父结点大于所有子结点
+            if (temp > arr[leftChild]) {
+                break;
+            }
+
+            //交换父结点和左结点（子结点中较大值）
+            arr[parent] = arr[leftChild];
+            //继续向下比较
+            parent = leftChild;
+            leftChild = 2 * parent + 1;
+        }
+        //把和父结点交换的子结点，重新赋值temp
+        arr[parent] = temp;
+
+    }
+
+    private static void quick(int[] arr) {
+        quickArr(arr, 0, arr.length - 1);
+    }
+
+    private static void quickArr(int[] arr, int left, int right) {
+        //递归跳出条件
+        if (left >= right) {
+            return;
+        }
+        //随机数组内一元素和最后一位交换，达到随机选取一个元素作为key效果
+        int random = new Random().nextInt(right - left + 1);
+        //数组从left开始，所以交换位置索引left+random
+        SortUtils.swap(arr, left + random, right);
+
+        //分组，大于key为一组放右边，小于key的为一组放左边
+        int[] position = partition(arr, left, right, arr[right]);
+        quickArr(arr, left, position[0] - 1);
+        quickArr(arr, position[1] + 1, right);
+    }
+
+    private static int[] partition(int[] arr, int left, int right, int key) {
+        int less = left - 1;
+        int more = right + 1;
+        int index = left;
+
+        while (index < more) {
+            //小于key处理
+            if (arr[index] < key) {
+                SortUtils.swap(arr, ++less, index++);
+            } else if (arr[index] > key) {
+                //此时index不+1，为了比较交换最后一位之后，最后一位还有和key作比较
+                SortUtils.swap(arr, --more, index);
+            } else {
+                //和key相等则比较下一位
+                index++;
+            }
+        }
+
+        return new int[]{less + 1, more - 1};
     }
 
     private static void merge(int[] arr) {
