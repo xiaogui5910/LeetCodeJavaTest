@@ -28,6 +28,8 @@ public class MainTest {
 
         new BucketSort().test();
 
+        new RadixSort().test();
+
 //        reviewSort();
     }
 
