@@ -1,5 +1,6 @@
 import leetcode.SingleNumberExtension;
 import leetcode.SingleNumber_136;
+import leetcode.TwoSum;
 import sort.*;
 
 import java.util.ArrayList;
@@ -34,7 +35,9 @@ public class MainTest {
 
         new RadixSort().test();
 
-        reviewSort();
+        new TwoSum().test();
+
+//        reviewSort();
     }
 
     private static void reviewSort() {
