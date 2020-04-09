@@ -25,9 +25,9 @@ public class InsertSort {
 
     public void test() {
         int[] testArr = {1, 6, 3, 8, 2, 4, 7, 5};
-        SortUtils.printArr(this.getClass().getSimpleName(),testArr);
+        Utils.printArr(this.getClass().getSimpleName(),testArr);
 
         insertSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(),testArr);
+        Utils.printArr(this.getClass().getSimpleName(),testArr);
     }
 }

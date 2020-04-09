@@ -35,10 +35,10 @@ public class RadixSort {
     }
     public void test() {
         int[] testArr = {421,240,35,532,305,430,124};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         radixSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 
     private int getMaxDigit(int[] arr) {

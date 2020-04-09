@@ -14,7 +14,7 @@ public class SelectionSort {
                 }
             }
             if (i != min) {
-                SortUtils.swap(arr, i, min);
+                Utils.swap(arr, i, min);
             }
 
         }
@@ -22,9 +22,9 @@ public class SelectionSort {
 
     public void test() {
         int[] testArr = {1, 6, 3, 8, 2, 4, 7, 5};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         seletionSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 }

@@ -42,10 +42,10 @@ public class ShellSort {
 
     public void test() {
         int[] testArr = {5, 3, 7, 9, 1, 6, 4, 8, 2};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         shellSortSolution(testArr);
 //        shellSortSolutionWhile(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 }

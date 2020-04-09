@@ -21,7 +21,7 @@ import java.util.Set;
  * （1）时间复杂度：第一次循环，将所有元素异或得到对应结果，时间开销为O(n)；第二次循环，找出第一次异或结果为1的位，时间开销为O(32)；第三次循环，根据为1的位将元素分为两组进行异或得到两个结果，时间复杂度为O(n)，所以总的时间复杂度为T(n) = 2*O(n)+O(32) = O(n)。
  * （2）空间复杂度：常数，因为只分配了两个空间用于结果的保存，因此空间复杂度为常数。
  */
-public class SingleNumberExtension {
+public class SingleNumber_260 {
     public int[] singleNumberExtension(int[] arr) {
         int[] resultArr = new int[2];
         //数组内元素异或，结果就是两个不同数的异或结果

@@ -63,9 +63,9 @@ public class MergeSort {
 
     public void test() {
         int[] testArr = {5, 3, 7, 9, 1, 6, 4, 8, 2};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         mergeSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 }

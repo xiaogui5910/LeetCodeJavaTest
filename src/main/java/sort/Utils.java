@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class SortUtils {
+public class Utils {
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
@@ -23,5 +23,13 @@ public class SortUtils {
 //        }
 
         System.out.println("------------end_print_arr-----------");
+    }
+
+    public static void printNum(Object object, Object num) {
+        System.out.println();
+        String tag = object.getClass().getSimpleName();
+        System.out.println(tag + "------------start_print_num-----------");
+        System.out.println(num.toString());
+        System.out.println("------------end_print_num-----------");
     }
 }

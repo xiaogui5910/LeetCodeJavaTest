@@ -1,6 +1,7 @@
-import leetcode.SingleNumberExtension;
+import leetcode.ReverseInteger_7;
+import leetcode.SingleNumber_260;
 import leetcode.SingleNumber_136;
-import leetcode.TwoSum;
+import leetcode.TwoSum_1;
 import sort.*;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class MainTest {
 
         new SingleNumber_136().test();
 
-        new SingleNumberExtension().test();
+        new SingleNumber_260().test();
 
         new BubbleSort().test();
 
@@ -35,14 +36,15 @@ public class MainTest {
 
         new RadixSort().test();
 
-        new TwoSum().test();
+        new TwoSum_1().test();
+        new ReverseInteger_7().test();
 
 //        reviewSort();
     }
 
     private static void reviewSort() {
         int[] arr = {2, 6, 4, 1, 8, 7, 3, 5};
-        SortUtils.printArr("maintest", arr);
+        Utils.printArr("maintest", arr);
 //        bubble(arr);
 //        selection(arr);
 //        insert(arr);
@@ -52,7 +54,7 @@ public class MainTest {
 //        heap(arr);
 //        count(arr);
         bucket(arr);
-        SortUtils.printArr("maintest", arr);
+        Utils.printArr("maintest", arr);
     }
 
     private static void bucket(int[] arr) {
@@ -132,7 +134,7 @@ public class MainTest {
         }
         for (int i = arr.length - 1; i >= 0; i--) {
             //交换第一个和最后一个元素
-            SortUtils.swap(arr, 0, i);
+            Utils.swap(arr, 0, i);
             //排除最后一个元素后继续调整成大顶堆,此时只有第一个父结点没有调整，所以parent=0，调整长度len=i
             adjustHeap(arr, 0, i);
         }
@@ -178,7 +180,7 @@ public class MainTest {
         //随机数组内一元素和最后一位交换，达到随机选取一个元素作为key效果
         int random = new Random().nextInt(right - left + 1);
         //数组从left开始，所以交换位置索引left+random
-        SortUtils.swap(arr, left + random, right);
+        Utils.swap(arr, left + random, right);
 
         //分组，大于key为一组放右边，小于key的为一组放左边
         int[] position = partition(arr, left, right, arr[right]);
@@ -194,10 +196,10 @@ public class MainTest {
         while (index < more) {
             //小于key处理
             if (arr[index] < key) {
-                SortUtils.swap(arr, ++less, index++);
+                Utils.swap(arr, ++less, index++);
             } else if (arr[index] > key) {
                 //此时index不+1，为了比较交换最后一位之后，最后一位还有和key作比较
-                SortUtils.swap(arr, --more, index);
+                Utils.swap(arr, --more, index);
             } else {
                 //和key相等则比较下一位
                 index++;

@@ -36,10 +36,10 @@ public class CountSort {
 
     public void test() {
         int[] testArr = {1, 6, 0, 1, 3, 8, 9, 3, 7, 3, 1, 3, 2, 4, 7, 5};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         countSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 
 

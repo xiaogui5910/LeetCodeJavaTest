@@ -1,6 +1,6 @@
 package leetcode;
 
-import sort.SortUtils;
+import sort.Utils;
 
 import java.util.HashMap;
 
@@ -17,25 +17,25 @@ import java.util.HashMap;
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
  */
-public class TwoSum {
+public class TwoSum_1 {
     public int[] solution(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
-            int delta = target - nums[i];
-            if (map.containsKey(nums[i])) {
-                return new int[]{map.get(nums[i]),i};
-            } else {
-                map.put(delta, i);
+            Integer value = map.get(nums[i]);
+            if (value != null) {
+                return new int[]{value, i};
             }
+            map.put(target - nums[i], i);
 
         }
         return null;
     }
-    public void test(){
-        int[] nums= {2, 7, 11, 15};
-        SortUtils.printArr(getClass().getSimpleName(),nums);
-        int target=9;
+
+    public void test() {
+        int[] nums = {2, 7, 11, 15};
+        Utils.printArr(getClass().getSimpleName(), nums);
+        int target = 9;
         int[] solution = solution(nums, target);
-        SortUtils.printArr(getClass().getSimpleName(),solution);
+        Utils.printArr(getClass().getSimpleName(), solution);
     }
 }

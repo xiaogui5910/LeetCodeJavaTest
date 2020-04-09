@@ -11,7 +11,7 @@ public class HeapSort {
         //调整排序
         for (int i = arr.length - 1; i >= 0; i--) {
             //交换堆顶和堆尾
-            SortUtils.swap(arr, 0, i);
+            Utils.swap(arr, 0, i);
 
             //重新调整,此时len = i
             adjustHeap(arr, 0, i);
@@ -20,10 +20,10 @@ public class HeapSort {
     }
     public void test() {
         int[] testArr = {1, 6, 3, 8, 2, 4, 7, 5};
-        SortUtils.printArr(this.getClass().getSimpleName(),testArr);
+        Utils.printArr(this.getClass().getSimpleName(),testArr);
 
         heapSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(),testArr);
+        Utils.printArr(this.getClass().getSimpleName(),testArr);
     }
 
     private void adjustHeap(int[] arr, int i, int length) {

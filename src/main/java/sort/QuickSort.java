@@ -17,7 +17,7 @@ public class QuickSort {
         //随机一个索引
         int index = new Random().nextInt(riht - left + 1);
         //随机元素和最后一个元素交换，也是属于找到一个随机数到最后一位
-        SortUtils.swap(arr, left + index, riht);
+        Utils.swap(arr, left + index, riht);
         int[] position = partition(arr, left, riht, arr[riht]);
         quick(arr, left, position[0] - 1);
         quick(arr, position[1] + 1, riht);
@@ -31,11 +31,11 @@ public class QuickSort {
         while (index < more) {
             //放到左边
             if (arr[index] < key) {
-                SortUtils.swap(arr, ++less, index++);
+                Utils.swap(arr, ++less, index++);
             }
             //放到右边
             else if (arr[index] > key) {
-                SortUtils.swap(arr, --more, index);
+                Utils.swap(arr, --more, index);
             }
             //相等放到中间
             else {
@@ -48,9 +48,9 @@ public class QuickSort {
 
     public void test() {
         int[] testArr = {5, 4,3, 7, 4,9, 1, 6, 4, 8, 2};
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
 
         quickSortSolution(testArr);
-        SortUtils.printArr(this.getClass().getSimpleName(), testArr);
+        Utils.printArr(this.getClass().getSimpleName(), testArr);
     }
 }
