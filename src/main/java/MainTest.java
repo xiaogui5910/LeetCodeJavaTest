@@ -1,7 +1,4 @@
-import leetcode.ReverseInteger_7;
-import leetcode.SingleNumber_260;
-import leetcode.SingleNumber_136;
-import leetcode.TwoSum_1;
+import leetcode.*;
 import sort.*;
 
 import java.util.ArrayList;
@@ -38,6 +35,7 @@ public class MainTest {
 
         new TwoSum_1().test();
         new ReverseInteger_7().test();
+        new RomanToInteger_13().test();
 
 //        reviewSort();
     }
