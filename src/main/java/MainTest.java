@@ -36,6 +36,7 @@ public class MainTest {
         new TwoSum_1().test();
         new ReverseInteger_7().test();
         new RomanToInteger_13().test();
+        new LongestCommonPrefix_14().test();
 
 //        reviewSort();
     }

@@ -24,6 +24,14 @@ public class Utils {
 
         System.out.println("------------end_print_arr-----------");
     }
+    public static void printArr(Object obj, Object[] arr) {
+        System.out.println();
+        String tag=obj.getClass().getSimpleName();
+        System.out.println(tag + "------------start_print_arr-----------");
+        System.out.println(Arrays.toString(arr));
+        System.out.println("------------end_print_arr-----------");
+    }
+
 
     public static void printNum(Object object, Object num) {
         System.out.println();
