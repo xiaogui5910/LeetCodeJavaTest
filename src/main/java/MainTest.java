@@ -37,6 +37,7 @@ public class MainTest {
         new ReverseInteger_7().test();
         new RomanToInteger_13().test();
         new LongestCommonPrefix_14().test();
+        new ValidParentheses().test();
 
 //        reviewSort();
     }
