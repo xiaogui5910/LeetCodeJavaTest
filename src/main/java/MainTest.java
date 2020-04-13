@@ -38,6 +38,7 @@ public class MainTest {
         new RomanToInteger_13().test();
         new LongestCommonPrefix_14().test();
         new ValidParentheses().test();
+        new MergeTwoLists_21().test();
 
 //        reviewSort();
     }
