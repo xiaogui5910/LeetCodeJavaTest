@@ -39,6 +39,7 @@ public class MainTest {
         new LongestCommonPrefix_14().test();
         new ValidParentheses().test();
         new MergeTwoLists_21().test();
+        new RemoveDuplicates_26().test();
 
 //        reviewSort();
     }
