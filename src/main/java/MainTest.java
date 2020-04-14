@@ -41,6 +41,7 @@ public class MainTest {
         new MergeTwoLists_21().test();
         new RemoveDuplicates_26().test();
         new RemoveElement_27().test();
+        new StrStr_28().test();
 
 //        reviewSort();
     }
