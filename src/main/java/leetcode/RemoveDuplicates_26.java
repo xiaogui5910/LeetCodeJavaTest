@@ -60,4 +60,18 @@ public class RemoveDuplicates_26 {
         }
         System.out.print("]");
     }
+
+    public int solution1(int[] nums) {
+        int len = nums.length;
+        if (len <= 1) {
+            return len;
+        }
+        int j = 1;
+        for (int i = 1; i < len; i++) {
+            if (nums[i - 1] != nums[i]) {
+                nums[j++] = nums[i];
+            }
+        }
+        return j;
+    }
 }

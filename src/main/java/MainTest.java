@@ -40,6 +40,7 @@ public class MainTest {
         new ValidParentheses().test();
         new MergeTwoLists_21().test();
         new RemoveDuplicates_26().test();
+        new RemoveElement_27().test();
 
 //        reviewSort();
     }
