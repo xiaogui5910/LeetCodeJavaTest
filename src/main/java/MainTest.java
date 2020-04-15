@@ -42,6 +42,8 @@ public class MainTest {
         new RemoveDuplicates_26().test();
         new RemoveElement_27().test();
         new StrStr_28().test();
+        new SearchInsert_35().test();
+        new CountAndSay_38().test();
 
 //        reviewSort();
     }
