@@ -44,6 +44,7 @@ public class MainTest {
         new StrStr_28().test();
         new SearchInsert_35().test();
         new CountAndSay_38().test();
+        new MaxSubArray_53().test();
 
 //        reviewSort();
     }
