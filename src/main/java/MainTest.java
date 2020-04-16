@@ -48,6 +48,7 @@ public class MainTest {
         new LengthOfLastWord_58().test();
         new PlusOne_66().test();
         new AddBinary_67().test();
+        new Sqrt_69().test();
 
 //        reviewSort();
     }
