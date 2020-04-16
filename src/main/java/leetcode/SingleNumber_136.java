@@ -1,7 +1,4 @@
 package leetcode;
-
-import org.apache.log4j.Logger;
-
 /**
  * 136. 只出现一次的数字
  * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
@@ -36,7 +33,7 @@ public class SingleNumber_136 {
     }
 
     public void test() {
-        Logger logger = Logger.getLogger(Logger.class);
+
         int[] arr = {4, 1, 2, 1, 2};
         for (int i = 0; i < arr.length; i++) {
             System.out.print(" " + arr[i]);
@@ -44,7 +41,7 @@ public class SingleNumber_136 {
 
         System.out.println();
         int result = singleNumber(arr);
-        logger.debug(result);
+        System.out.printf(""+result);
     }
 
 }
