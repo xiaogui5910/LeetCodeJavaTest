@@ -46,6 +46,8 @@ public class MainTest {
         new CountAndSay_38().test();
         new MaxSubArray_53().test();
         new LengthOfLastWord_58().test();
+        new PlusOne_66().test();
+        new AddBinary_67().test();
 
 //        reviewSort();
     }
