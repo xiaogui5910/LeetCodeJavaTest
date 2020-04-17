@@ -27,15 +27,6 @@ public class MergeTwoLists_21 {
         return l3.next;
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public void test() {
         ListNode l1 = new ListNode(1);
         ListNode l1_1 = new ListNode(2);

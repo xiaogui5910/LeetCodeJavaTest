@@ -49,6 +49,10 @@ public class MainTest {
         new PlusOne_66().test();
         new AddBinary_67().test();
         new Sqrt_69().test();
+        new ClimbStairs_70().test();
+        new DeleteDuplicates_83().test();
+        new MergeSortedArray_88().test();
+        new Message().test();
 
 //        reviewSort();
     }
