@@ -53,6 +53,7 @@ public class MainTest {
         new DeleteDuplicates_83().test();
         new MergeSortedArray_88().test();
         new Message().test();
+        new MaximumDepthOfBinaryTree_104().test();
 
 //        reviewSort();
     }
