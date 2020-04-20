@@ -54,6 +54,7 @@ public class MainTest {
         new MergeSortedArray_88().test();
         new Message().test();
         new MaximumDepthOfBinaryTree_104().test();
+        new BinaryTreeLevelOrderTraversal_107().test();
 
 //        reviewSort();
     }
