@@ -58,6 +58,7 @@ public class MainTest {
         new SortedArrayToBinarySearchTree_108().test();
         new MinimumDepthOfBinaryTree_111().test();
         new PathSum_112().test();
+        new PalindromeString_125().test();
 
 //        reviewSort();
     }
