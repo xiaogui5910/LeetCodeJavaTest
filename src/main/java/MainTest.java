@@ -55,6 +55,9 @@ public class MainTest {
         new Message().test();
         new MaximumDepthOfBinaryTree_104().test();
         new BinaryTreeLevelOrderTraversal_107().test();
+        new SortedArrayToBinarySearchTree_108().test();
+        new MinimumDepthOfBinaryTree_111().test();
+        new PathSum_112().test();
 
 //        reviewSort();
     }
