@@ -49,6 +49,7 @@ public class MainTest {
         new PlusOne_66().test();
         new AddBinary_67().test();
         new Sqrt_69().test();
+        new PascalsTriangle_118().test();
 
 //        reviewSort();
     }
