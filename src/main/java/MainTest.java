@@ -62,6 +62,7 @@ public class MainTest {
         new PascalsTriangle_119().test();
         new BestTimeToBuyAndSellStock_121().test();
         new BestTimeToBuyAndSellStock_122().test();
+        new DiameterOfBinaryTree_543().test();
 
 //        reviewSort();
     }
