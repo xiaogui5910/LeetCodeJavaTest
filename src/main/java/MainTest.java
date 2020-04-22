@@ -59,6 +59,9 @@ public class MainTest {
         new MinimumDepthOfBinaryTree_111().test();
         new PathSum_112().test();
         new PalindromeString_125().test();
+        new PascalsTriangle_119().test();
+        new BestTimeToBuyAndSellStock_121().test();
+        new BestTimeToBuyAndSellStock_122().test();
 
 //        reviewSort();
     }
