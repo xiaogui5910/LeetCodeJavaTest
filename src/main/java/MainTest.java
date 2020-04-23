@@ -64,6 +64,9 @@ public class MainTest {
         new BestTimeToBuyAndSellStock_122().test();
         new DiameterOfBinaryTree_543().test();
 
+        new AddTwoNumbers_2().test();
+        new AddTwoNumbers_445().test();
+
 //        reviewSort();
     }
 
