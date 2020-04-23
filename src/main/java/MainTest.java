@@ -50,6 +50,23 @@ public class MainTest {
         new AddBinary_67().test();
         new Sqrt_69().test();
         new PascalsTriangle_118().test();
+        new ClimbStairs_70().test();
+        new DeleteDuplicates_83().test();
+        new MergeSortedArray_88().test();
+        new Message().test();
+        new MaximumDepthOfBinaryTree_104().test();
+        new BinaryTreeLevelOrderTraversal_107().test();
+        new SortedArrayToBinarySearchTree_108().test();
+        new MinimumDepthOfBinaryTree_111().test();
+        new PathSum_112().test();
+        new PalindromeString_125().test();
+        new PascalsTriangle_119().test();
+        new BestTimeToBuyAndSellStock_121().test();
+        new BestTimeToBuyAndSellStock_122().test();
+        new DiameterOfBinaryTree_543().test();
+
+        new AddTwoNumbers_2().test();
+        new AddTwoNumbers_445().test();
 
 //        reviewSort();
     }
