@@ -67,6 +67,7 @@ public class MainTest {
 
         new AddTwoNumbers_2().test();
         new AddTwoNumbers_445().test();
+        new LongestCommonSubsequence_1143().test();
 
 //        reviewSort();
     }
