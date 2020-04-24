@@ -68,6 +68,8 @@ public class MainTest {
         new LongestCommonSubsequence_1143().test();
         new LongestSubstringWithoutRepeatingCharacters_3().test();
 
+        new EditDistance_72().test();
+
 //        reviewSort();
     }
 

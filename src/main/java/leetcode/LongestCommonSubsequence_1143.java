@@ -43,15 +43,20 @@ public class LongestCommonSubsequence_1143 {
     public int solution(String text1, String text2) {
         char[] l1 = text1.toCharArray();
         char[] l2 = text2.toCharArray();
-        int[][] dp = new int[l1.length + 1][l2.length + 1];
         int max = 0;
+        int[][] dp = new int[l1.length + 1][l2.length + 1];
         for (int i = 1; i <= l1.length; i++) {
             for (int j = 1; j <= l2.length; j++) {
-                if (l1[i-1] == l2[j-1]) {
+                //判断text1和text2在i-1和i-2的索引的字符是否相同，因为i和j都是从1开始的，索引要i-1和j-1
+                if (l1[i - 1] == l2[j - 1]) {
+                    //相同则有动态规范，推导分析，结果由左上角结果+1
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
+                    //不同则由分析出，不能由前一个结果（左上角：dp[i-1][j-1]）+1(相同可以加1，不同则不能加1),
+                    // 就是去掉当前两个字符i和j的结果，dp[i-1][j]和dp[i][j-1]中找到一个最大值则是当前结果
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
+                //记录dp[i][j]中最大值
                 max = Math.max(max, dp[i][j]);
             }
         }
