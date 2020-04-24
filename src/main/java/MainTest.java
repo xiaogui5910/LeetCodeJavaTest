@@ -47,6 +47,7 @@ public class MainTest {
         new PlusOne_66().test();
         new AddBinary_67().test();
         new Sqrt_69().test();
+        new PascalsTriangle_118().test();
         new ClimbStairs_70().test();
         new DeleteDuplicates_83().test();
         new MergeSortedArray_88().test();
@@ -64,6 +65,7 @@ public class MainTest {
 
         new AddTwoNumbers_2().test();
         new AddTwoNumbers_445().test();
+        new LongestCommonSubsequence_1143().test();
         new LongestSubstringWithoutRepeatingCharacters_3().test();
 
 //        reviewSort();
