@@ -1,9 +1,7 @@
 import leetcode.*;
 import sort.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 public class MainTest {
     public static void main(String[] args) {
@@ -66,6 +64,7 @@ public class MainTest {
 
         new AddTwoNumbers_2().test();
         new AddTwoNumbers_445().test();
+        new LongestSubstringWithoutRepeatingCharacters_3().test();
 
 //        reviewSort();
     }
