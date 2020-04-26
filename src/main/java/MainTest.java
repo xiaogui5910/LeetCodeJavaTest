@@ -69,6 +69,7 @@ public class MainTest {
         new LongestSubstringWithoutRepeatingCharacters_3().test();
 
         new EditDistance_72().test();
+        new MinimumWindowSubstring_76().test();
 
 //        reviewSort();
     }
