@@ -70,6 +70,8 @@ public class MainTest {
 
         new EditDistance_72().test();
         new MinimumWindowSubstring_76().test();
+        new LongestPalindrome_5().test();
+        new LongestIncreasingSubsequence_300().test();
 
 //        reviewSort();
     }
