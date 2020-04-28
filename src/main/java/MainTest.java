@@ -72,6 +72,7 @@ public class MainTest {
         new MinimumWindowSubstring_76().test();
         new LongestPalindrome_5().test();
         new LongestIncreasingSubsequence_300().test();
+        new ZigZagConversion_6().test();
 
 //        reviewSort();
     }
