@@ -1,4 +1,6 @@
 import leetcode.*;
+import other.ReverseKGroup;
+import other.ReverseKGroupPlus;
 import sort.*;
 
 import java.util.*;
@@ -74,6 +76,9 @@ public class MainTest {
         new LongestIncreasingSubsequence_300().test();
         new ZigZagConversion_6().test();
         new String2Integer_8().test();
+
+        new ReverseKGroup().test();
+        new ReverseKGroupPlus().test();
 
 //        reviewSort();
     }
