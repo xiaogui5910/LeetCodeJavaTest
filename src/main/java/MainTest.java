@@ -73,6 +73,7 @@ public class MainTest {
         new LongestPalindrome_5().test();
         new LongestIncreasingSubsequence_300().test();
         new ZigZagConversion_6().test();
+        new String2Integer_8().test();
 
 //        reviewSort();
     }
