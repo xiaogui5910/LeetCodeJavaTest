@@ -82,6 +82,8 @@ public class MainTest {
 
         new ContainerWithMostWater_11().test();
         new IntegerToRoman_12().test();
+        new ThreeSum_15().test();
+        new ThreeSumClosest_16().test();
 
 //        reviewSort();
     }
