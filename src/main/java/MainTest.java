@@ -84,6 +84,8 @@ public class MainTest {
         new IntegerToRoman_12().test();
         new ThreeSum_15().test();
         new ThreeSumClosest_16().test();
+        new LetterCombinations_17().test();
+        new FourSum_18().test();
 
 //        reviewSort();
     }
