@@ -86,6 +86,10 @@ public class MainTest {
         new ThreeSumClosest_16().test();
         new LetterCombinations_17().test();
         new FourSum_18().test();
+        new RemoveNthFromEnd_19().test();
+        new GenerateParenthesis_22().test();
+        new SwapPairs_24().test();
+        new DivideTwoIntegers_29().test();
 
 //        reviewSort();
     }
