@@ -1,4 +1,5 @@
 import leetcode.*;
+import quicktest.*;
 import sort.*;
 
 import java.util.ArrayList;
@@ -68,6 +69,13 @@ public class MainTest {
         new AddTwoNumbers_2().test();
         new AddTwoNumbers_445().test();
         new LongestCommonSubsequence_1143().test();
+        new Test001().test();
+        new IsValidTest().test();
+        new Test002().test();
+        new Test003().test();
+        new PermuteTest().test();
+        new MergeTwoListsTest().test();
+        new SolveNQueensTest().test();
 
 //        reviewSort();
     }
