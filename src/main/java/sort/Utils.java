@@ -9,6 +9,14 @@ public class Utils {
         arr[j] = temp;
     }
 
+    public static void reverse(int[] arr, int start) {
+        int left = start;
+        int right = arr.length-1;
+        while (left < right) {
+            swap(arr, left++, right--);
+        }
+    }
+
     public static void printArr(String tag, int[] arr) {
         System.out.println();
         System.out.println(tag + "------------start_print_arr-----------");
@@ -24,9 +32,10 @@ public class Utils {
 
         System.out.println("------------end_print_arr-----------");
     }
+
     public static void printArr(Object obj, Object[] arr) {
         System.out.println();
-        String tag=obj.getClass().getSimpleName();
+        String tag = obj.getClass().getSimpleName();
         System.out.println(tag + "------------start_print_arr-----------");
         System.out.println(Arrays.toString(arr));
         System.out.println("------------end_print_arr-----------");

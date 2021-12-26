@@ -76,6 +76,10 @@ public class MainTest {
         new PermuteTest().test();
         new MergeTwoListsTest().test();
         new SolveNQueensTest().test();
+        new MergeKListsTest().test();
+        new NextPermutationTest().test();
+        new SearchTest().test();
+        new SearchRangeTest().test();
 
 //        reviewSort();
     }
