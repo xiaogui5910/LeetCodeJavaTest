@@ -1,10 +1,10 @@
 import leetcode.*;
 import quicktest.*;
+import other.ReverseKGroup;
+import other.ReverseKGroupPlus;
 import sort.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 public class MainTest {
     public static void main(String[] args) {
@@ -80,6 +80,28 @@ public class MainTest {
         new NextPermutationTest().test();
         new SearchTest().test();
         new SearchRangeTest().test();
+        new LongestSubstringWithoutRepeatingCharacters_3().test();
+
+        new EditDistance_72().test();
+        new MinimumWindowSubstring_76().test();
+        new LongestPalindrome_5().test();
+        new LongestIncreasingSubsequence_300().test();
+        new ZigZagConversion_6().test();
+        new String2Integer_8().test();
+
+        new ReverseKGroup().test();
+        new ReverseKGroupPlus().test();
+
+        new ContainerWithMostWater_11().test();
+        new IntegerToRoman_12().test();
+        new ThreeSum_15().test();
+        new ThreeSumClosest_16().test();
+        new LetterCombinations_17().test();
+        new FourSum_18().test();
+        new RemoveNthFromEnd_19().test();
+        new GenerateParenthesis_22().test();
+        new SwapPairs_24().test();
+        new DivideTwoIntegers_29().test();
 
 //        reviewSort();
     }
