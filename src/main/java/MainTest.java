@@ -103,6 +103,10 @@ public class MainTest {
         new SwapPairs_24().test();
         new DivideTwoIntegers_29().test();
 
+        new MinPathSumTest().test();
+        new UniquePathsTest().test();
+        new LetterCombinationsTest().test();
+
 //        reviewSort();
     }
 
